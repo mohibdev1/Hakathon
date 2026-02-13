@@ -546,8 +546,184 @@ body{
   z-index:10;
   position:relative;
 }
- 
+ /* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+}
+.hero-right img,
+.card-img img,
+.contact-img img,
+.brands img{
+  max-width: 100%;   /* screen ke andar fit ho jaye */
+  height: auto;
+}
 
+/* ========================= */
+/* RESPONSIVE NAVBAR */
+/* ========================= */
+
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:#000;
+}
+
+/* MOBILE */
+@media (max-width: 992px){
+
+  .navbar{
+    justify-content:space-between;
+    padding:20px;
+  }
+
+  .navbar nav{
+    position:absolute;
+    top:80px;
+    right:0;
+    background:#fff;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    display:none;
+  }
+
+  .navbar nav a{
+    display:block;
+    margin:15px 0;
+  }
+
+  .btn-wrap{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+  }
+
+  .navbar nav.active{
+    display:flex;
+  }
+}
+@media (max-width: 992px){
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-left h1{
+    font-size:32px;
+  }
+
+  .hero-left p{
+    margin:0 auto 20px;
+  }
+
+  .hero-right{
+    margin-top:30px;
+  }
+
+}
+@media (max-width: 992px){
+
+  .service-cards{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .card-content{
+    max-width:100%;
+  }
+
+}
+@media (max-width: 992px){
+
+  .process-item{
+    padding:20px;         /* padding kam karo */
+  }
+
+  .process-top{
+    flex-direction:column;  /* number + title + button stack */
+    align-items:flex-start;  /* left align */
+    gap:15px;
+  }
+
+  .process-top .left{
+    gap:10px;
+    flex-direction:row;
+    align-items:center;
+  }
+
+  .toggle{
+    width:35px;
+    height:35px;
+    min-width:35px;
+    min-height:35px;
+    margin-top:10px;
+  }
+
+  .toggle img{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media (max-width: 992px){
+
+  .contact-box{
+    grid-template-columns:1fr;
+    padding:30px;
+  }
+
+  .contact-img{
+    text-align:center;
+  }
+
+}
+@media (max-width: 992px){
+
+  .footer{
+    padding:30px 20px;   /* padding kam karo mobile me */
+  }
+
+  .footer-top{
+    grid-template-columns:1fr;  /* single column stack */
+    gap:25px;
+    text-align:center;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-nav{
+    align-items:center;
+  }
+
+  .subscribe-box{
+    max-width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    max-width:100%;
+  }
+
+}
 
 
 
