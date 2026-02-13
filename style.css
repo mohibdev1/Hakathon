@@ -543,7 +543,7 @@ body{
 
 @media (max-width: 992px){
 
-  /* ===== Navbar ===== */
+  
   .navbar{
     padding:20px 30px;
   }
@@ -556,7 +556,7 @@ body{
     margin-left:auto;
   }
 
-  /* ===== Hero ===== */
+  
   .hero{
     grid-template-columns:1fr;
     text-align:center;
@@ -572,13 +572,13 @@ body{
     margin-top:40px;
   }
 
-  /* ===== Brands ===== */
+  
   .brands{
     flex-wrap:wrap;
     gap:20px;
   }
 
-  /* ===== Services ===== */
+  
   .services{
     padding:60px 30px;
   }
@@ -596,7 +596,7 @@ body{
     max-width:100%;
   }
 
-  /* ===== Process ===== */
+  
   .process{
     padding:0 30px;
   }
@@ -605,7 +605,7 @@ body{
     font-size:28px;
   }
 
-  /* ===== Contact ===== */
+
   .contact{
     padding:60px 30px;
   }
@@ -619,7 +619,7 @@ body{
     text-align:center;
   }
 
-  /* ===== Footer ===== */
+  
   .footer{
     padding:50px 30px;
   }
@@ -643,7 +643,7 @@ body{
 }
 @media (max-width: 576px){
 
-  /* ===== Navbar ===== */
+
   .navbar{
     padding:15px 20px;
     justify-content:space-between;
@@ -692,7 +692,7 @@ body{
     transition:0.3s;
   }
 
-  /* Hamburger Animation */
+
   .menu-toggle.active span:nth-child(1){
     transform:rotate(45deg) translate(5px,5px);
   }
@@ -705,7 +705,7 @@ body{
     transform:rotate(-45deg) translate(6px,-6px);
   }
 
-  /* ===== Hero ===== */
+  
   .hero{
     padding:30px 20px;
   }
@@ -723,7 +723,7 @@ body{
     width:100%;
   }
 
-  /* ===== Services ===== */
+  
   .services{
     padding:50px 20px;
   }
@@ -743,7 +743,7 @@ body{
     padding:25px;
   }
 
-  /* ===== Process ===== */
+  
   .process{
     padding:0 20px;
   }
@@ -762,7 +762,7 @@ body{
     font-size:18px;
   }
 
-  /* ===== Contact ===== */
+  
   .contact{
     padding:50px 20px;
   }
@@ -780,7 +780,7 @@ body{
     padding:15px 0;
   }
 
-  /* ===== Footer ===== */
+
   .footer{
     padding:40px 20px;
   }
