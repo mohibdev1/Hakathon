@@ -724,6 +724,32 @@ body, html {
   }
 
 }
+ 
+/* Prevent horizontal scroll */
+body, html {
+  overflow-x: hidden;
+}
+.hero-right img,
+.card-img img,
+.contact-img img,
+.brands img{
+  max-width: 100%;   /* screen ke andar fit ho jaye */
+  height: auto;
+}
+/* Hero + Service + Contact sections */
+.hero, .service-cards, .contact-box, .brands {
+  width: 100%;
+  box-sizing: border-box; /* padding bhi include ho width me */
+}
+
+/* Cards */
+.card{
+  max-width:100%;  /* mobile me overflow na ho */
+  flex-wrap:wrap;
+}
+.process-top{
+  flex-wrap:wrap;  /* icons aur text wrap ho jaye */
+}
 
 
 
